@@ -4963,6 +4963,34 @@ span.numbers-deco {
 	background-image: url(../images/about-us.jpg);
 }
 
+
+
+
+
+
+
+.about2-right-image-wrap {
+	position: relative;
+	overflow: hidden;
+	padding-top: 60.42%;
+}
+@media all and (max-width: 991px) { /* xs to (and including) md */
+	.about2-right-image-wrap {
+		margin-top: 30px;
+	}
+}
+
+.about2-right-image {
+	background-image: url(../images/founder.jpg);
+}
+
+
+
+
+
+
+
+
 .custom-about-us-p2 {
 	max-width: 320px;
 	width: 100%;

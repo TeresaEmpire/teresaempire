@@ -98,33 +98,34 @@ $(document).ready(function(){
 	 */
 	let masterCurtain = $( '.sk__master-curtain' );
 	let effectsMasterDelay = parseFloat(0);
-	if ( masterCurtain.length ) {
+	if (masterCurtain.length) {
 
 		$( '.sk__master-curtain .mcurtain' ).addClass( 'mcurtain-visible' );
-
+	
 		// define master "curtain" animation variables
-		let masterCurtainDelay = 2.4;
-		let masterCurtainDuration = 0.4;
-		let masterCurtainStagger = 0.24;
-
+		let masterCurtainDelay = 3.0; // Increased delay time
+		let masterCurtainDuration = 1.2; // Increased animation duration
+		let masterCurtainStagger = 0.5; // Increased stagger time
+	
 		// update master delay time
 		effectsMasterDelay = masterCurtainDelay + masterCurtainDuration + ( masterCurtainStagger * 2 );
 		effectsMasterDelay = parseFloat(effectsMasterDelay);
-
+	
 		// create the curtain animation
 		gsap.to( '.mcurtain', {
-				yPercent: -100,
-				duration: masterCurtainDuration,
-				delay: masterCurtainDelay - 0.7,
-				stagger: masterCurtainStagger,
-				ease: "power2.in"
-			});
-		
+			yPercent: -100,
+			duration: masterCurtainDuration,
+			delay: masterCurtainDelay - 0.7,
+			stagger: masterCurtainStagger,
+			ease: "power2.in"
+		});
+	
 		setTimeout(function(){
 			$( '.sk__master-curtain' ).detach();
 		}, ((effectsMasterDelay + 0.7) * 1000));
-
+	
 	}
+	
 
 
 	/**

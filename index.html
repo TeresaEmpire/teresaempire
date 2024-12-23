@@ -721,6 +721,60 @@
 				<!-- /.sk__portfolio-section -->
 
 
+					<!-- Gallery Section
+				================================================== -->
+				<section class="sk__gallery-basic">
+					<!-- Carousel -->
+					<div id="sk__gallery-carousel" class="carousel slide" data-bs-ride="carousel">
+					  
+					  <!-- Dots -->
+					  <div class="carousel-indicators" id="carouselIndicators"></div>
+					  
+					  <!-- Slides -->
+					  <div class="carousel-inner" id="carouselInner"></div>
+					  
+					  <!-- Arrows -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#sk__gallery-carousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#sk__gallery-carousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </section>
+				  
+				  <script>
+					const totalSlides = 56; // Total number of images
+					const imagePath = "assets/images/gallery/"; // Path to images
+					const carouselInner = document.getElementById("carouselInner");
+					const carouselIndicators = document.getElementById("carouselIndicators");
+				  
+					for (let i = 1; i <= totalSlides; i++) {
+					  // Create slide
+					  const carouselItem = document.createElement("div");
+					  carouselItem.className = `carousel-item ${i === 1 ? "active" : ""}`;
+					  carouselItem.innerHTML = `
+						<img src="${imagePath}${i}.png" alt="Gallery image ${i}" class="d-block w-100">
+						
+					  `;
+					  carouselInner.appendChild(carouselItem);
+				  
+					  // Create indicator
+					  const indicator = document.createElement("button");
+					  indicator.type = "button";
+					  indicator.setAttribute("data-bs-target", "#sk__gallery-carousel");
+					  indicator.setAttribute("data-bs-slide-to", i - 1); // Slide index starts from 0
+					  indicator.className = i === 1 ? "active" : "";
+					  indicator.setAttribute("aria-label", `Slide ${i}`);
+					  carouselIndicators.appendChild(indicator);
+					}
+				  </script>
+				  
+				<!-- /.sk__portfolio-section -->
+
+
 				<!-- Featured Project Section
 				================================================== -->
 				<section class="sk__featured-project-section sk__parallax-background-section dark-shade-2-bg sk__flex">

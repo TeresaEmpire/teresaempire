@@ -1,5 +1,10 @@
 #: locale=en
 
+## Hotspot
+
+### URL
+overlay_45CB6781_55F5_4702_41B2_D3351B273CBD.url = https://teresa-empire.com/
+
 ## Media
 
 ### Title
@@ -7,8 +12,8 @@ panorama_58FB057C_55DB_FB03_419D_86D5CF1B1315.label = rec2
 video_453DE935_55ED_4B02_41D2_E50AC715F469.label = video_4EE8A11D_41B9_0345_418C_3398DC86A6C6_en
 
 ### Video
-videolevel_45BDE961_55EB_4B05_41C9_D9BB92025C30.url = media/video_453DE935_55ED_4B02_41D2_E50AC715F469_en.mp4
-videolevel_45BDE961_55EB_4B05_41C9_D9BB92025C30.posterURL = media/video_453DE935_55ED_4B02_41D2_E50AC715F469_poster_en.jpg
+videolevel_44ED1889_55FA_C905_41D3_B57512696888.url = media/video_453DE935_55ED_4B02_41D2_E50AC715F469_en.mp4
+videolevel_44ED1889_55FA_C905_41D3_B57512696888.posterURL = media/video_453DE935_55ED_4B02_41D2_E50AC715F469_poster_en.jpg
 
 ### Video Subtitles
 

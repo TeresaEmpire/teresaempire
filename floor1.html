@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="description" content="TeresaEmpire">
+	<meta name="author" content="TeresaEmpire">
+	<meta name="keywords" content="TeresaEmpire " />
+
+	<meta property="og:title" content="TeresaEmpire" />
+	<meta property="og:description" content="TeresaEmpire" />
+	<!-- <meta property="og:image" content="assets/images/facebook-post-image-default.jpg"/> -->
+
+	<meta property="og:site_name" content="teresa-empire.com" />
+
+	<title>TeresaEmpire</title>
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<!-- Bootstrap CSS -->
+	<link href="assets/vendor/bootstrap/5.1.3/bootstrap.min.css" rel="stylesheet">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Lato:wght@100;300;400;700;900&amp;family=Poppins:wght@200;300;400;600;700;800&amp;family=Syncopate:wght@400;700&amp;display=swap"
+		rel="stylesheet">
+	<!-- Icon Fonts -->
+	<link href="assets/vendor/icomoon/icomoon.min.css" rel="stylesheet">
+
+	<!-- Off Canvas Menu - Default Theme -->
+	<link href="assets/vendor/offcanvas-nav/hc-offcanvas-nav.css" rel="stylesheet" />
+
+	<!-- Theme CSS -->
+	<link href="assets/css/theme.css" rel="stylesheet">
+	<link href="assets/css/theme-colors.css" rel="stylesheet">
+
+	<!-- Theme Preview Only CSS -->
+	<link href="assets/css/theme-preview-color-styler.css" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+
+	<!-- Slick (carousel) -->
+	<link href="assets/vendor/slick/1.8.1/slick.css" rel="stylesheet">
+	<link href="assets/vendor/slick/1.8.1/slick-theme-skilltech.css" rel="stylesheet">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-0CK5T93V47"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-0CK5T93V47');
+	</script> -->
+
+</head>
+
+<body class="sk__homepage sk__home-combo-slider dark-shade-1-bg">
+
+	<main id="primary" class="site-main">
+
+		<!-- Master Curtain Effect -->
+		<section class="sk__master-curtain">
+			<div class="mcurtain mcurtain-left"></div>
+			<div class="mcurtain mcurtain-center"></div>
+			<div class="mcurtain mcurtain-right"></div>
+		</section>
+
+		
+
+					<!-- Gallery Section
+				================================================== -->
+				<section class="sk__gallery-basic">
+					<!-- Carousel -->
+					<div id="sk__gallery-carousel" class="carousel slide" data-bs-ride="carousel">
+					  
+					  <!-- Dots -->
+					  <div class="carousel-indicators" id="carouselIndicators"></div>
+					  
+					  <!-- Slides -->
+					  <div class="carousel-inner" id="carouselInner"></div>
+					  
+					  <!-- Arrows -->
+					  <button class="carousel-control-prev" type="button" data-bs-target="#sk__gallery-carousel" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					  </button>
+					  <button class="carousel-control-next" type="button" data-bs-target="#sk__gallery-carousel" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					  </button>
+					</div>
+				  </section>
+				  
+				  <script>
+					const totalSlides = 11; // Total number of images
+					const imagePath = "assets/images/gallery/floor1/"; // Path to images
+					const carouselInner = document.getElementById("carouselInner");
+					const carouselIndicators = document.getElementById("carouselIndicators");
+				  
+					for (let i = 1; i <= totalSlides; i++) {
+					  // Create slide
+					  const carouselItem = document.createElement("div");
+					  carouselItem.className = `carousel-item ${i === 1 ? "active" : ""}`;
+					  carouselItem.innerHTML = `
+						<img src="${imagePath}${i}.png" alt="Gallery image ${i}" class="d-block w-100">
+						
+					  `;
+					  carouselInner.appendChild(carouselItem);
+				  
+					  // Create indicator
+					  const indicator = document.createElement("button");
+					  indicator.type = "button";
+					  indicator.setAttribute("data-bs-target", "#sk__gallery-carousel");
+					  indicator.setAttribute("data-bs-slide-to", i - 1); // Slide index starts from 0
+					  indicator.className = i === 1 ? "active" : "";
+					  indicator.setAttribute("aria-label", `Slide ${i}`);
+					  carouselIndicators.appendChild(indicator);
+					}
+				  </script>
+				  
+				<!-- /.sk__portfolio-section -->
+
+
+			
+
+
+	<!-- Scripts / Body End
+	================================================== -->
+	<!-- Vendor Scripts -->
+	<script src="assets/vendor/bootstrap/5.1.3/bootstrap.min.js"></script>
+	<script src="assets/vendor/offcanvas-nav/hc-offcanvas-nav.js"></script>
+	<script src="assets/vendor/greensock/gsap.min.js"></script>
+	<script src="assets/vendor/greensock/ScrollTrigger.min.js"></script>
+	<script src="assets/vendor/greensock/ScrollSmoother.min.js"></script>
+	<script src="assets/vendor/greensock/ScrollToPlugin.min.js"></script>
+	<script src="assets/vendor/slick/1.8.1/slick.min.js"></script>
+	<script src="assets/vendor/parallax/3.1.0/parallax.min.js"></script>
+
+	<!-- Main Theme JS File -->
+	<script src="assets/js/theme.js"></script>
+
+	<!-- Theme Preview Only Scripts -->
+	<script src="assets/vendor/spectrum/spectrum.min.js"></script>
+	<script src="assets/vendor/clipboard/clipboard.min.js"></script>
+	<!-- <script src="assets/js/theme-preview-only.js"></script> -->
+
+	<!-- Theme Preview Only CSS -->
+	<link href="assets/vendor/spectrum/spectrum.min.css" rel="stylesheet">
+
+</body>
+
+
+</html>
